@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.798 s <<< FAILURE! - in TestSuite
-apidemospackage.mixed.tc_six  Time elapsed: 0.009 s  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 37.137 s <<< FAILURE! - in TestSuite
+apidemospackage.mixed.tc_six  Time elapsed: 12.321 s  <<< FAILURE!
 java.lang.AssertionError: did not expect to find [true] but found [false]
-	at apidemospackage.mixed.tc_six(mixed.java:178)
+	at apidemospackage.mixed.tc_six(mixed.java:192)
 

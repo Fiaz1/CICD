@@ -11,17 +11,21 @@ import io.appium.java_client.remote.MobileCapabilityType;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.model.Log;
+
 import io.appium.java_client.MobileBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 //import junit.framework.Assert;
-import pageObjects.AppObjects;
+//import pageObjects.AppObjects;
 
 import static java.time.Duration.ofSeconds;
 import static org.testng.Assert.assertFalse;
@@ -32,6 +36,8 @@ import io.appium.java_client.android.nativekey.KeyEvent;
 
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -94,7 +100,10 @@ public class mixed {
 //	}
 	@Test
 	public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException
-	{
+	{			
+		File allureDir = new File("allure-results");
+		DeleteAllure.deleteDir(allureDir);
+		
 		File file = new File("src");
 		File location = new File(file,"ApiDemos-debug.apk");
 		DesiredCapabilities cap = new DesiredCapabilities();
@@ -172,12 +181,23 @@ public class mixed {
 
 	}
 	@Test
-	public void tc_six() throws InterruptedException
+	public void tc_six() throws InterruptedException, MalformedURLException
 	{	
 //		Assert.assertFalse(false, "fail test");
+		AndroidDriver<AndroidElement> driver=Capabilities();
+		
+		
+		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(f, new File("D:\\Appium-Setups\\apidemo\\allure-results\\Test.png"));
+		}
+		catch (Exception ex) 
+		{
+			System.out.println("Exception " + ex.toString());
+		}
 		assertTrue(false);
-
 	}
+	
 	
 	
 }

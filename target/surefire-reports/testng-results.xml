@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24182" started-at="2019-11-28T15:32:59 PKT" finished-at="2019-11-28T15:33:23 PKT">
+  <suite name="Suite" duration-ms="36513" started-at="2019-11-28T18:06:10 PKT" finished-at="2019-11-28T18:06:47 PKT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="24182" started-at="2019-11-28T15:32:59 PKT" finished-at="2019-11-28T15:33:23 PKT">
+    <test name="Test" duration-ms="36513" started-at="2019-11-28T18:06:10 PKT" finished-at="2019-11-28T18:06:47 PKT">
       <class name="apidemospackage.mixed">
-        <test-method status="PASS" signature="tc_five()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_five" duration-ms="57" started-at="2019-11-28T15:32:59 PKT" finished-at="2019-11-28T15:32:59 PKT">
+        <test-method status="PASS" signature="tc_five()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_five" duration-ms="57" started-at="2019-11-28T18:06:10 PKT" finished-at="2019-11-28T18:06:10 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_five -->
-        <test-method status="PASS" signature="tc_four()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_four" duration-ms="2" started-at="2019-11-28T15:32:59 PKT" finished-at="2019-11-28T15:32:59 PKT">
+        <test-method status="PASS" signature="tc_four()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_four" duration-ms="1" started-at="2019-11-28T18:06:10 PKT" finished-at="2019-11-28T18:06:10 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_four -->
-        <test-method status="PASS" signature="tc_one()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_one" duration-ms="23999" started-at="2019-11-28T15:32:59 PKT" finished-at="2019-11-28T15:33:23 PKT">
+        <test-method status="PASS" signature="tc_one()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_one" duration-ms="24010" started-at="2019-11-28T18:06:10 PKT" finished-at="2019-11-28T18:06:34 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_one -->
-        <test-method status="FAIL" signature="tc_six()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_six" duration-ms="3" started-at="2019-11-28T15:33:23 PKT" finished-at="2019-11-28T15:33:23 PKT">
+        <test-method status="FAIL" signature="tc_six()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_six" duration-ms="12314" started-at="2019-11-28T18:06:34 PKT" finished-at="2019-11-28T18:06:47 PKT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[did not expect to find [true] but found [false]]]>
@@ -30,7 +30,7 @@ at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.failNotEquals(Assert.java:969)
 at org.testng.Assert.assertTrue(Assert.java:43)
 at org.testng.Assert.assertTrue(Assert.java:53)
-at apidemospackage.mixed.tc_six(mixed.java:178)
+at apidemospackage.mixed.tc_six(mixed.java:192)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -69,11 +69,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_six -->
-        <test-method status="PASS" signature="tc_three()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_three" duration-ms="2" started-at="2019-11-28T15:33:23 PKT" finished-at="2019-11-28T15:33:23 PKT">
+        <test-method status="PASS" signature="tc_three()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_three" duration-ms="2" started-at="2019-11-28T18:06:47 PKT" finished-at="2019-11-28T18:06:47 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_three -->
-        <test-method status="PASS" signature="tc_two()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_two" duration-ms="1" started-at="2019-11-28T15:33:23 PKT" finished-at="2019-11-28T15:33:23 PKT">
+        <test-method status="PASS" signature="tc_two()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_two" duration-ms="1" started-at="2019-11-28T18:06:47 PKT" finished-at="2019-11-28T18:06:47 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_two -->
