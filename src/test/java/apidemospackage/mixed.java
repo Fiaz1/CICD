@@ -150,24 +150,28 @@ public class mixed {
 		assertTrue(true);
 
 	}
+	@Test
 	public void tc_three() throws InterruptedException
 	{	
 //		Assert.assertFalse(false, "fail test");
 		assertTrue(true);
 
 	}
+	@Test
 	public void tc_four() throws InterruptedException
 	{	
 //		Assert.assertFalse(false, "fail test");
 		assertTrue(true);
 
 	}
+	@Test
 	public void tc_five() throws InterruptedException
 	{	
 //		Assert.assertFalse(false, "fail test");
 		assertTrue(true);
 
 	}
+	@Test
 	public void tc_six() throws InterruptedException
 	{	
 //		Assert.assertFalse(false, "fail test");

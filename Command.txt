@@ -1,0 +1,5 @@
+mvn clean test -PSmoke
+allure serve allure-results
+
+start "" appium
+start "" emulator 
