@@ -225,23 +225,24 @@ public class mixed {
 		
 
 	}
-//	@Test(priority=6)
-//	public void tc_six() throws InterruptedException, MalformedURLException
-//	{	
-////		Assert.assertFalse(false, "fail test");
-//		AndroidDriver<AndroidElement> driver=Capabilities();
-//		
-//		
-//		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		try {
-//			FileUtils.copyFile(f, new File("D:\\Appium-Setups\\apidemo\\allure-results\\Test.png"));
-//		}
-//		catch (Exception ex) 
-//		{
-//			System.out.println("Exception " + ex.toString());
-//		}
-//		assertTrue(false);
-//		System.out.println("Test6");
-//	}
+	@Test(priority=11)
+	public void tc_eleven() throws InterruptedException, MalformedURLException
+	{	
+		Assert.assertFalse(false, "fail test");
+		AndroidDriver<AndroidElement> driver=Capabilities();
+		
+		
+		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		try {
+			FileUtils.copyFile(f, new File("D:\\Appium-Setups\\apidemo\\allure-results\\Test.png"));
+		}
+		catch (Exception ex) 
+		{
+			System.out.println("Exception " + ex.toString());
+		}
+		System.out.println("Test11");
+		assertTrue(false);
+		
+	}
 	
 }
