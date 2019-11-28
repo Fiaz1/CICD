@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-KIQLQCS",
+    "children" : [ {
+      "name" : "1112@DESKTOP-KIQLQCS.main(1)",
+      "children" : [ {
+        "name" : "tc_one",
+        "uid" : "28855e8c318042a9",
+        "parentUid" : "b7e54cebbd290f1266bb728be66e89d9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1574751719704,
+          "stop" : 1574751747899,
+          "duration" : 28195
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b7e54cebbd290f1266bb728be66e89d9"
+    } ],
+    "uid" : "23aa118c846b6767c74295cf03d6c880"
+  } ]
+}

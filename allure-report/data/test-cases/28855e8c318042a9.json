@@ -1,0 +1,85 @@
+{
+  "uid" : "28855e8c318042a9",
+  "name" : "tc_one",
+  "fullName" : "apidemospackage.mixed.tc_one",
+  "historyId" : "6b384e0bd0025e4fea05c3c0e9f308e5",
+  "time" : {
+    "start" : 1574751719704,
+    "stop" : 1574751747899,
+    "duration" : 28195
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "apidemospackage.mixed"
+  }, {
+    "name" : "testClass",
+    "value" : "apidemospackage.mixed"
+  }, {
+    "name" : "testMethod",
+    "value" : "tc_one"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "apidemospackage.mixed"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-KIQLQCS"
+  }, {
+    "name" : "thread",
+    "value" : "1112@DESKTOP-KIQLQCS.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "36daa8e3ff481a99",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574751564216,
+        "stop" : 1574751591557,
+        "duration" : 27341
+      }
+    }, {
+      "uid" : "2a6f096a08bf42d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574750488898,
+        "stop" : 1574750516949,
+        "duration" : 28051
+      }
+    }, {
+      "uid" : "25e50eedc73d2b4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1574750165779,
+        "stop" : 1574750198880,
+        "duration" : 33101
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "28855e8c318042a9.json",
+  "parameterValues" : [ ]
+}

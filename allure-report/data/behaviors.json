@@ -1,0 +1,17 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "tc_one",
+    "uid" : "28855e8c318042a9",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1574751719704,
+      "stop" : 1574751747899,
+      "duration" : 28195
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  } ]
+}

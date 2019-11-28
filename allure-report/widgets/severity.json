@@ -1,0 +1,11 @@
+[ {
+  "uid" : "28855e8c318042a9",
+  "name" : "tc_one",
+  "time" : {
+    "start" : 1574751719704,
+    "stop" : 1574751747899,
+    "duration" : 28195
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

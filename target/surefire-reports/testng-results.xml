@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="22730" started-at="2019-11-28T11:32:53 PKT" finished-at="2019-11-28T11:33:15 PKT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="22730" started-at="2019-11-28T11:32:53 PKT" finished-at="2019-11-28T11:33:15 PKT">
+      <class name="apidemospackage.mixed">
+        <test-method status="PASS" signature="tc_one()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_one" duration-ms="22624" started-at="2019-11-28T11:32:53 PKT" finished-at="2019-11-28T11:33:15 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_one -->
+        <test-method status="PASS" signature="tc_two()[pri:0, instance:apidemospackage.mixed@318ba8c8]" name="tc_two" duration-ms="2" started-at="2019-11-28T11:33:15 PKT" finished-at="2019-11-28T11:33:15 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_two -->
+      </class> <!-- apidemospackage.mixed -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

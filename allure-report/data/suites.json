@@ -1,0 +1,29 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Suite",
+    "children" : [ {
+      "name" : "Test",
+      "children" : [ {
+        "name" : "apidemospackage.mixed",
+        "children" : [ {
+          "name" : "tc_one",
+          "uid" : "28855e8c318042a9",
+          "parentUid" : "e561222edfd4faffedd694811e2122b6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1574751719704,
+            "stop" : 1574751747899,
+            "duration" : 28195
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e561222edfd4faffedd694811e2122b6"
+      } ],
+      "uid" : "7314231e84d67a341867b5c9d3f928d2"
+    } ],
+    "uid" : "29f4dcc45a0e26cd7c7462063cee854b"
+  } ]
+}
