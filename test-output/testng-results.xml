@@ -1,36 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="6" passed="5">
+<testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35568" started-at="2019-11-28T18:36:31 PKT" finished-at="2019-11-28T18:37:06 PKT">
+  <suite name="Default suite" duration-ms="26254" started-at="2019-11-28T19:29:54 PKT" finished-at="2019-11-28T19:30:20 PKT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35568" started-at="2019-11-28T18:36:31 PKT" finished-at="2019-11-28T18:37:06 PKT">
+    <test name="Default test" duration-ms="26254" started-at="2019-11-28T19:29:54 PKT" finished-at="2019-11-28T19:30:20 PKT">
       <class name="apidemospackage.mixed">
-        <test-method status="PASS" signature="tc_five()[pri:0, instance:apidemospackage.mixed@1139b2f3]" name="tc_five" duration-ms="57" started-at="2019-11-28T18:36:31 PKT" finished-at="2019-11-28T18:36:31 PKT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_five -->
-        <test-method status="PASS" signature="tc_four()[pri:0, instance:apidemospackage.mixed@1139b2f3]" name="tc_four" duration-ms="3" started-at="2019-11-28T18:36:31 PKT" finished-at="2019-11-28T18:36:31 PKT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_four -->
-        <test-method status="PASS" signature="tc_one()[pri:0, instance:apidemospackage.mixed@1139b2f3]" name="tc_one" duration-ms="23292" started-at="2019-11-28T18:36:31 PKT" finished-at="2019-11-28T18:36:54 PKT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_one -->
-        <test-method status="FAIL" signature="tc_six()[pri:0, instance:apidemospackage.mixed@1139b2f3]" name="tc_six" duration-ms="12089" started-at="2019-11-28T18:36:54 PKT" finished-at="2019-11-28T18:37:06 PKT">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="tc_one()[pri:2, instance:apidemospackage.mixed@7a69b07]" name="tc_one" duration-ms="26059" started-at="2019-11-28T19:29:54 PKT" finished-at="2019-11-28T19:30:20 PKT">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[did not expect to find [true] but found [false]]]>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FIAZ-PC', ip: '192.168.60.7', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\Appium-Setups\apidemo\sr..., appPackage: io.appium.android.apis, automationName: uiautomator2, databaseEnabled: false, desired: {app: D:\Appium-Setups\apidemo\sr..., automationName: uiautomator2, deviceName: Pixel2, platformName: android}, deviceApiLevel: 26, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1af69e61-79fd-4aa6-9a26-2b72e9d8bd75
+*** Element info: {Using=xpath, value=//*[@text='WiFi settings']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: did not expect to find [true] but found [false]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.failNotEquals(Assert.java:969)
-at org.testng.Assert.assertTrue(Assert.java:43)
-at org.testng.Assert.assertTrue(Assert.java:53)
-at apidemospackage.mixed.tc_six(mixed.java:198)
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'FIAZ-PC', ip: '192.168.60.7', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\Appium-Setups\apidemo\sr..., appPackage: io.appium.android.apis, automationName: uiautomator2, databaseEnabled: false, desired: {app: D:\Appium-Setups\apidemo\sr..., automationName: uiautomator2, deviceName: Pixel2, platformName: android}, deviceApiLevel: 26, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1af69e61-79fd-4aa6-9a26-2b72e9d8bd75
+*** Element info: {Using=xpath, value=//*[@text='WiFi settings']}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+at apidemospackage.mixed.tc_one(mixed.java:146)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -61,18 +86,34 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_six -->
-        <test-method status="PASS" signature="tc_three()[pri:0, instance:apidemospackage.mixed@1139b2f3]" name="tc_three" duration-ms="7" started-at="2019-11-28T18:37:06 PKT" finished-at="2019-11-28T18:37:06 PKT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tc_three -->
-        <test-method status="PASS" signature="tc_two()[pri:0, instance:apidemospackage.mixed@1139b2f3]" name="tc_two" duration-ms="2" started-at="2019-11-28T18:37:06 PKT" finished-at="2019-11-28T18:37:06 PKT">
+        </test-method> <!-- tc_one -->
+        <test-method status="PASS" signature="tc_two()[pri:2, instance:apidemospackage.mixed@7a69b07]" name="tc_two" duration-ms="7" started-at="2019-11-28T19:30:20 PKT" finished-at="2019-11-28T19:30:20 PKT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_two -->
+        <test-method status="PASS" signature="tc_three()[pri:3, instance:apidemospackage.mixed@7a69b07]" name="tc_three" duration-ms="4" started-at="2019-11-28T19:30:20 PKT" finished-at="2019-11-28T19:30:20 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_three -->
+        <test-method status="PASS" signature="tc_four()[pri:4, instance:apidemospackage.mixed@7a69b07]" name="tc_four" duration-ms="3" started-at="2019-11-28T19:30:20 PKT" finished-at="2019-11-28T19:30:20 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_four -->
+        <test-method status="PASS" signature="tc_five()[pri:5, instance:apidemospackage.mixed@7a69b07]" name="tc_five" duration-ms="5" started-at="2019-11-28T19:30:20 PKT" finished-at="2019-11-28T19:30:20 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_five -->
+        <test-method status="PASS" signature="tc_six()[pri:6, instance:apidemospackage.mixed@7a69b07]" name="tc_six" duration-ms="3" started-at="2019-11-28T19:30:20 PKT" finished-at="2019-11-28T19:30:20 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_six -->
+        <test-method status="PASS" signature="tc_seven()[pri:7, instance:apidemospackage.mixed@7a69b07]" name="tc_seven" duration-ms="3" started-at="2019-11-28T19:30:20 PKT" finished-at="2019-11-28T19:30:20 PKT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_seven -->
       </class> <!-- apidemospackage.mixed -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Fiaz\AppData\Local\Temp\testng-eclipse--665976491\testng-customsuite.xml</span>
+                    <span>C:\Users\Fiaz\AppData\Local\Temp\testng-eclipse-310301081\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="apidemospackage.mixed" hash-for-method="tc_six">tc_six</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="apidemospackage.mixed" hash-for-method="tc_one">tc_one</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -126,7 +126,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="apidemospackage.mixed" hash-for-method="tc_one">tc_one</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="apidemospackage.mixed" hash-for-method="tc_seven">tc_seven</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="apidemospackage.mixed" hash-for-method="tc_six">tc_six</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,15 +164,46 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_six">
-                  </a> <!-- tc_six -->
-                  <span class="method-name">tc_six</span>
-                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.failNotEquals(Assert.java:969)
-	at org.testng.Assert.assertTrue(Assert.java:43)
-	at org.testng.Assert.assertTrue(Assert.java:53)
-	at apidemospackage.mixed.tc_six(mixed.java:198)
+                  <a name="tc_one">
+                  </a> <!-- tc_one -->
+                  <span class="method-name">tc_one</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;FIAZ-PC&apos;, ip: &apos;192.168.60.7&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_231&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\Appium-Setups\apidemo\sr..., appPackage: io.appium.android.apis, automationName: uiautomator2, databaseEnabled: false, desired: {app: D:\Appium-Setups\apidemo\sr..., automationName: uiautomator2, deviceName: Pixel2, platformName: android}, deviceApiLevel: 26, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1af69e61-79fd-4aa6-9a26-2b72e9d8bd75
+*** Element info: {Using=xpath, value=//*[@text=&apos;WiFi settings&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at apidemospackage.mixed.tc_one(mixed.java:146)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -224,9 +260,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_one">
-                  </a> <!-- tc_one -->
-                  <span class="method-name">tc_one</span>
+                  <a name="tc_seven">
+                  </a> <!-- tc_seven -->
+                  <span class="method-name">tc_seven</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_six">
+                  </a> <!-- tc_six -->
+                  <span class="method-name">tc_six</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -248,7 +291,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Fiaz\AppData\Local\Temp\testng-eclipse--665976491\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Fiaz\AppData\Local\Temp\testng-eclipse-310301081\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -297,36 +340,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc_one')
 data.setCell(0, 2, 'apidemospackage.mixed')
-data.setCell(0, 3, 23292);
+data.setCell(0, 3, 26059);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc_six')
+data.setCell(1, 1, 'tc_two')
 data.setCell(1, 2, 'apidemospackage.mixed')
-data.setCell(1, 3, 12089);
+data.setCell(1, 3, 7);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'tc_five')
 data.setCell(2, 2, 'apidemospackage.mixed')
-data.setCell(2, 3, 57);
+data.setCell(2, 3, 5);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'tc_three')
 data.setCell(3, 2, 'apidemospackage.mixed')
-data.setCell(3, 3, 7);
+data.setCell(3, 3, 4);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'tc_four')
+data.setCell(4, 1, 'tc_seven')
 data.setCell(4, 2, 'apidemospackage.mixed')
 data.setCell(4, 3, 3);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'tc_two')
+data.setCell(5, 1, 'tc_four')
 data.setCell(5, 2, 'apidemospackage.mixed')
-data.setCell(5, 3, 2);
+data.setCell(5, 3, 3);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tc_six')
+data.setCell(6, 2, 'apidemospackage.mixed')
+data.setCell(6, 3, 3);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -354,30 +401,34 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">apidemospackage.mixed</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">tc_five</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc_one</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">tc_four</span>
-                <span class="method-start">127 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">tc_one</span>
-                <span class="method-start">133 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tc_six</span>
-                <span class="method-start">23427 ms</span>
+                <span class="method-name">tc_two</span>
+                <span class="method-start">26166 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">tc_three</span>
-                <span class="method-start">35522 ms</span>
+                <span class="method-start">26178 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">tc_two</span>
-                <span class="method-start">35531 ms</span>
+                <span class="method-name">tc_four</span>
+                <span class="method-start">26184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc_five</span>
+                <span class="method-start">26189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc_six</span>
+                <span class="method-start">26198 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc_seven</span>
+                <span class="method-start">26204 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

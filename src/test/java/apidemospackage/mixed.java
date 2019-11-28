@@ -98,7 +98,7 @@ public class mixed {
 //	{	
 //		Assert.assertFalse(false, "passed test");
 //	}
-	@Test
+	@Test(priority=1)
 	public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException
 	{			
 		File allureDir = new File("allure-results");
@@ -113,9 +113,10 @@ public class mixed {
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 	//	return driver;
 		Assert.assertFalse(false, "fail test");
+		System.out.println("Test0");
 		return driver;
 	}
-	@Test
+	@Test(priority=2)
 	//-----------------------------------------------APi Demo-------------------------------------------------------//
 	public void tc_one() throws MalformedURLException, InterruptedException 
 	{     
@@ -151,53 +152,96 @@ public class mixed {
 		String lastText=    driver.findElement(By.xpath("//*[@text='QA Department']")).getText();
 
 		Assert.assertEquals("QA Department", lastText);
+		System.out.println("Test1");
 	}
-	@Test
+	@Test(priority=2)
 	public void tc_two() throws InterruptedException
 	{	
 //		Assert.assertFalse(false, "fail test");
 		assertTrue(true);
-
+		System.out.println("Test2");
 	}
-	@Test
+	@Test(priority=3)
 	public void tc_three() throws InterruptedException
 	{	
 //		Assert.assertFalse(false, "fail test");
 		assertTrue(true);
-
+		System.out.println("Test3");
 	}
-	@Test
+	@Test(priority=4)
 	public void tc_four() throws InterruptedException
 	{	
 //		Assert.assertFalse(false, "fail test");
-		assertTrue(true);
-
+		System.out.println("Test4");
+		assertTrue(false);
+		
 	}
-	@Test
+	@Test(priority=5)
 	public void tc_five() throws InterruptedException
 	{	
 //		Assert.assertFalse(false, "fail test");
 		assertTrue(true);
-
+		System.out.println("Test5");
 	}
-	@Test
-	public void tc_six() throws InterruptedException, MalformedURLException
+	@Test(priority=6)
+	public void tc_six() throws InterruptedException
 	{	
 //		Assert.assertFalse(false, "fail test");
-		AndroidDriver<AndroidElement> driver=Capabilities();
-		
-		
-		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(f, new File("D:\\Appium-Setups\\apidemo\\allure-results\\Test.png"));
-		}
-		catch (Exception ex) 
-		{
-			System.out.println("Exception " + ex.toString());
-		}
+		System.out.println("Test6");
 		assertTrue(false);
+		
+
 	}
-	
-	
+	@Test(priority=7)
+	public void tc_seven() throws InterruptedException
+	{	
+//		Assert.assertFalse(false, "fail test");
+		assertTrue(true);
+		System.out.println("Test7");
+
+	}
+	@Test(priority=8)
+	public void tc_eight() throws InterruptedException
+	{	
+//		Assert.assertFalse(false, "fail test");
+		assertTrue(true);
+		System.out.println("Test8");
+
+	}
+	@Test(priority=9)
+	public void tc_nine() throws InterruptedException
+	{	
+//		Assert.assertFalse(false, "fail test");
+		assertTrue(true);
+		System.out.println("Test9");
+
+	}
+	@Test(priority=10)
+	public void tc_ten() throws InterruptedException
+	{	
+//				Assert.assertFalse(false, "fail test");
+		System.out.println("Test10");
+		assertTrue(true);
+		
+
+	}
+//	@Test(priority=6)
+//	public void tc_six() throws InterruptedException, MalformedURLException
+//	{	
+////		Assert.assertFalse(false, "fail test");
+//		AndroidDriver<AndroidElement> driver=Capabilities();
+//		
+//		
+//		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		try {
+//			FileUtils.copyFile(f, new File("D:\\Appium-Setups\\apidemo\\allure-results\\Test.png"));
+//		}
+//		catch (Exception ex) 
+//		{
+//			System.out.println("Exception " + ex.toString());
+//		}
+//		assertTrue(false);
+//		System.out.println("Test6");
+//	}
 	
 }

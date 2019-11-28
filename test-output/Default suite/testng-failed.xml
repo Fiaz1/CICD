@@ -5,7 +5,7 @@
     <classes>
       <class name="apidemospackage.mixed">
         <methods>
-          <include name="tc_six"/>
+          <include name="tc_one"/>
         </methods>
       </class> <!-- apidemospackage.mixed -->
     </classes>

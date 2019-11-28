@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,   5 passed</span>
+                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apidemospackage.mixed" hash-for-method="tc_four">tc_four</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apidemospackage.mixed" hash-for-method="tc_six">tc_six</a> <!-- method navigator-link -->
@@ -116,17 +121,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apidemospackage.mixed" hash-for-method="tc_eight">tc_eight</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apidemospackage.mixed" hash-for-method="tc_five">tc_five</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apidemospackage.mixed" hash-for-method="tc_four">tc_four</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apidemospackage.mixed" hash-for-method="tc_nine">tc_nine</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apidemospackage.mixed" hash-for-method="tc_one">tc_one</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apidemospackage.mixed" hash-for-method="tc_seven">tc_seven</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apidemospackage.mixed" hash-for-method="tc_ten">tc_ten</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -159,11 +179,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="tc_four">
+                  </a> <!-- tc_four -->
+                  <span class="method-name">tc_four</span>
+                  <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
+	at apidemospackage.mixed.tc_four(mixed.java:176)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="tc_six">
                   </a> <!-- tc_six -->
                   <span class="method-name">tc_six</span>
                   <div class="stack-trace">java.lang.AssertionError: did not expect to find [true] but found [false]
-	at apidemospackage.mixed.tc_six(mixed.java:192)
+	at apidemospackage.mixed.tc_six(mixed.java:191)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 35 stack frames
 </div> <!-- stack-trace -->
@@ -179,6 +211,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="tc_eight">
+                  </a> <!-- tc_eight -->
+                  <span class="method-name">tc_eight</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="tc_five">
                   </a> <!-- tc_five -->
                   <span class="method-name">tc_five</span>
@@ -186,9 +225,9 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_four">
-                  </a> <!-- tc_four -->
-                  <span class="method-name">tc_four</span>
+                  <a name="tc_nine">
+                  </a> <!-- tc_nine -->
+                  <span class="method-name">tc_nine</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -196,6 +235,20 @@
                   <a name="tc_one">
                   </a> <!-- tc_one -->
                   <span class="method-name">tc_one</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_seven">
+                  </a> <!-- tc_seven -->
+                  <span class="method-name">tc_seven</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc_ten">
+                  </a> <!-- tc_ten -->
+                  <span class="method-name">tc_ten</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -266,19 +319,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'tc_one')
 data.setCell(0, 2, 'apidemospackage.mixed')
-data.setCell(0, 3, 24010);
+data.setCell(0, 3, 22300);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'tc_six')
+data.setCell(1, 1, 'tc_two')
 data.setCell(1, 2, 'apidemospackage.mixed')
-data.setCell(1, 3, 12314);
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'tc_five')
+data.setCell(2, 1, 'tc_ten')
 data.setCell(2, 2, 'apidemospackage.mixed')
-data.setCell(2, 3, 57);
+data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'tc_three')
 data.setCell(3, 2, 'apidemospackage.mixed')
@@ -286,16 +339,32 @@ data.setCell(3, 3, 2);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'tc_four')
 data.setCell(4, 2, 'apidemospackage.mixed')
-data.setCell(4, 3, 1);
+data.setCell(4, 3, 2);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'tc_two')
+data.setCell(5, 1, 'tc_five')
 data.setCell(5, 2, 'apidemospackage.mixed')
 data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tc_eight')
+data.setCell(6, 2, 'apidemospackage.mixed')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'tc_nine')
+data.setCell(7, 2, 'apidemospackage.mixed')
+data.setCell(7, 3, 1);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'tc_seven')
+data.setCell(8, 2, 'apidemospackage.mixed')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'tc_six')
+data.setCell(9, 2, 'apidemospackage.mixed')
+data.setCell(9, 3, 1);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 36 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -323,30 +392,48 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">apidemospackage.mixed</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">tc_five</span>
+                <span class="method-name">tc_one</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">tc_four</span>
-                <span class="method-start">132 ms</span>
+                <span class="method-name">tc_two</span>
+                <span class="method-start">22365 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">tc_one</span>
-                <span class="method-start">136 ms</span>
+                <span class="method-name">tc_three</span>
+                <span class="method-start">22370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tc_four</span>
+                <span class="method-start">22373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc_five</span>
+                <span class="method-start">22383 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">tc_six</span>
-                <span class="method-start">24148 ms</span>
+                <span class="method-start">22386 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">tc_three</span>
-                <span class="method-start">36470 ms</span>
+                <span class="method-name">tc_seven</span>
+                <span class="method-start">22389 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">tc_two</span>
-                <span class="method-start">36473 ms</span>
+                <span class="method-name">tc_eight</span>
+                <span class="method-start">22391 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc_nine</span>
+                <span class="method-start">22393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc_ten</span>
+                <span class="method-start">22395 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
